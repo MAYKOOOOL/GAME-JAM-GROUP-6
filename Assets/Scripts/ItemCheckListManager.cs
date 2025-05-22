@@ -12,6 +12,9 @@ public class ItemChecklistManager : MonoBehaviour
         public bool isCollected = false;
     }
 
+    public GameObject checklistUI;  
+    public GameObject timerUI;  
+
     public List<ChecklistEntry> checklistEntries;
     public GameObject winPanel;
     public GameObject losePanel;
@@ -56,6 +59,9 @@ public class ItemChecklistManager : MonoBehaviour
             if (winPanel != null)
                 winPanel.SetActive(true);
 
+            if (checklistUI != null) checklistUI.SetActive(false);
+            if (timerUI != null) timerUI.SetActive(false);
+
             Time.timeScale = 0f;
         }
     }
@@ -66,6 +72,10 @@ public class ItemChecklistManager : MonoBehaviour
         if (losePanel != null)
             losePanel.SetActive(true);
 
+        if (checklistUI != null) checklistUI.SetActive(false);
+        if (timerUI != null) timerUI.SetActive(false);
+
         Time.timeScale = 0f;
     }
+
 }
