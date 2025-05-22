@@ -29,13 +29,11 @@ public class PlayerMovement : MonoBehaviour
     private float pitch = 0f;
 
     public ItemChecklistManager checklistManager;
-/*    private bool isGameOver = false;*/
 
-
+    private bool isGameActive = true;
 
     void Start()
     {
-        AudioManager.Instance.PlayBGM("BGM");
         rb = GetComponent<Rigidbody>();
         moveSpeed = walkSpeed;
         Cursor.lockState = CursorLockMode.Locked;
@@ -45,7 +43,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-/*        if(!isGameOver) return;*/
+        if (!isGameActive) return;
+
         GroundCheck();
         Move();
         Sprint();
@@ -59,13 +58,6 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
     }
-/*
-    public void StopPlayer()
-    {
-        isGameOver = true;
-        rb.velocity = Vector3.zero;
-    }*/
-
 
     void Move()
     {
@@ -126,12 +118,11 @@ public class PlayerMovement : MonoBehaviour
                 {
                     ShowPickupMessage("You've picked up a special item!");
                     checklistManager.CrossOutItem(hit.collider.gameObject);
-                    Destroy(heldObject);  
+                    Destroy(heldObject);
                 }
                 else if (hit.collider.CompareTag("PickUp"))
                 {
                     ShowPickupMessage("You've picked up a random item!");
-
                 }
             }
         }
@@ -189,5 +180,19 @@ public class PlayerMovement : MonoBehaviour
     void HidePickupMessage()
     {
         pickupMessageText.gameObject.SetActive(false);
+    }
+
+    // ===== Control Methods =====
+    public void StopPlayer()
+    {
+        isGameActive = false;
+        rb.velocity = Vector3.zero;
+        rb.isKinematic = true;
+    }
+
+    public void ResumePlayer()
+    {
+        isGameActive = true;
+        rb.isKinematic = false;
     }
 }
