@@ -1979,7 +1979,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 8
+  m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1065342712
 MonoBehaviour:
@@ -2944,7 +2944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55e63258fb5d74042830ea3244aa3513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTime: 10
+  startTime: 60
   timerText: {fileID: 527302418}
   checklistManager: {fileID: 28327458}
 --- !u!1 &1439819987

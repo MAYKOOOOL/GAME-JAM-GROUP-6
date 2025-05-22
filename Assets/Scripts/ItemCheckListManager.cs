@@ -58,6 +58,8 @@ public class ItemChecklistManager : MonoBehaviour
             Debug.Log("All items collected! You win!");
             if (winPanel != null)
                 winPanel.SetActive(true);
+      /*      if (playerMovement != null)
+                playerMovement.StopPlayer();*/
 
             if (checklistUI != null) checklistUI.SetActive(false);
             if (timerUI != null) timerUI.SetActive(false);
@@ -71,6 +73,8 @@ public class ItemChecklistManager : MonoBehaviour
         Debug.Log("You lost!");
         if (losePanel != null)
             losePanel.SetActive(true);
+/*        if (playerMovement != null)
+            playerMovement.StopPlayer();*/
 
         if (checklistUI != null) checklistUI.SetActive(false);
         if (timerUI != null) timerUI.SetActive(false);
