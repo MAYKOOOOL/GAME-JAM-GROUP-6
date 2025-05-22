@@ -29,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     private float pitch = 0f;
 
     public ItemChecklistManager checklistManager;
+/*    private bool isGameOver = false;*/
+
 
 
     void Start()
@@ -42,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+/*        if(!isGameOver) return;*/
         GroundCheck();
         Move();
         Sprint();
@@ -55,6 +58,13 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
     }
+/*
+    public void StopPlayer()
+    {
+        isGameOver = true;
+        rb.velocity = Vector3.zero;
+    }*/
+
 
     void Move()
     {
