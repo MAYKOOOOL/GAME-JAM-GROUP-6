@@ -4,6 +4,8 @@ using System.Collections;
 
 public class AIPatrolAndChase : MonoBehaviour
 {
+    public ItemChecklistManager checklistManager;
+
     public Transform[] waypoints;
     public float detectionRange = 10f;
     public float fieldOfView = 120f;
@@ -13,12 +15,12 @@ public class AIPatrolAndChase : MonoBehaviour
     public float lookAroundAngle = 45f;
 
     public float patrolSpeed = 3.5f;
-    public float chaseSpeedMultiplier = 2f; // Multiplier when chasing player
+    public float chaseSpeedMultiplier = 2f; 
 
     private NavMeshAgent agent;
     private int currentWaypoint = 0;
     private bool isChasing = false;
-    private bool playerInTrigger = false; // NEW: track if player is inside trigger collider
+    private bool playerInTrigger = false; 
     private Coroutine pauseCoroutine;
 
     private Quaternion initialRotation;
@@ -34,7 +36,6 @@ public class AIPatrolAndChase : MonoBehaviour
 
     void Update()
     {
-        // Chase if player is in trigger or seen by vision cone
         if (playerInTrigger || CanSeePlayer())
         {
             if (!isChasing)
@@ -189,8 +190,6 @@ public class AIPatrolAndChase : MonoBehaviour
         if (!isChasing && !isInvestigating)
             GoToNextWaypoint();
     }
-
-    // New trigger event handlers
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform == player)
@@ -206,4 +205,12 @@ public class AIPatrolAndChase : MonoBehaviour
             playerInTrigger = false;
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            checklistManager.TriggerLoseCondition();
+        }
+    }
+
 }

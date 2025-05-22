@@ -9,19 +9,63 @@ public class ItemChecklistManager : MonoBehaviour
     {
         public GameObject itemObject;
         public TMP_Text itemText;
+        public bool isCollected = false;
     }
 
     public List<ChecklistEntry> checklistEntries;
+    public GameObject winPanel;
+    public GameObject losePanel;
+    public PlayerMovement playerMovement;
+
+    private void Start()
+    {
+        if (winPanel != null)
+            winPanel.SetActive(false);
+        if (losePanel != null)
+            losePanel.SetActive(false);
+    }
 
     public void CrossOutItem(GameObject item)
     {
         foreach (ChecklistEntry entry in checklistEntries)
         {
-            if (entry.itemObject == item)
+            if (entry.itemObject == item && !entry.isCollected)
             {
+                entry.isCollected = true;
                 entry.itemText.text = "<s> ✓ " + entry.itemText.text.Replace("-<s>", "").Replace("</s>", "") + "</s>";
+
+                CheckWinCondition();
                 break;
             }
         }
+    }
+
+    private void CheckWinCondition()
+    {
+        int collectedCount = 0;
+
+        foreach (ChecklistEntry entry in checklistEntries)
+        {
+            if (entry.isCollected)
+                collectedCount++;
+        }
+
+        if (collectedCount >= checklistEntries.Count)
+        {
+            Debug.Log("All items collected! You win!");
+            if (winPanel != null)
+                winPanel.SetActive(true);
+
+            Time.timeScale = 0f;
+        }
+    }
+
+    public void TriggerLoseCondition()
+    {
+        Debug.Log("You lost!");
+        if (losePanel != null)
+            losePanel.SetActive(true);
+
+        Time.timeScale = 0f;
     }
 }
