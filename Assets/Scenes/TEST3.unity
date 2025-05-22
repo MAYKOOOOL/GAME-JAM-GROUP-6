@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 34029345}
   - component: {fileID: 34029344}
   - component: {fileID: 34029343}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 38503956}
   - component: {fileID: 38503955}
   - component: {fileID: 38503954}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1085,6 +1085,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 89.333
       objectReference: {fileID: 0}
+    - target: {fileID: -4139999717627085057, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -1637404393950251687, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: -262889390134771846, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0796
@@ -1121,9 +1129,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.014831
       objectReference: {fileID: 0}
+    - target: {fileID: -177984336840072155, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
       propertyPath: m_Name
       value: Fbx assets
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
       propertyPath: m_IsActive
@@ -1180,6 +1196,10 @@ PrefabInstance:
     - target: {fileID: 7510089802060981170, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.020117
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708461078708779553, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9166346350026587631, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
       propertyPath: m_LocalScale.x
@@ -1545,7 +1565,7 @@ GameObject:
   - component: {fileID: 96686522}
   - component: {fileID: 96686521}
   - component: {fileID: 96686520}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1841,7 +1861,7 @@ GameObject:
   - component: {fileID: 107187794}
   - component: {fileID: 107187793}
   - component: {fileID: 107187792}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building_1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2175,7 +2195,7 @@ GameObject:
   - component: {fileID: 127087682}
   - component: {fileID: 127087681}
   - component: {fileID: 127087680}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2394,7 +2414,7 @@ GameObject:
   - component: {fileID: 136032322}
   - component: {fileID: 136032324}
   - component: {fileID: 136032325}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2604,7 +2624,7 @@ GameObject:
   - component: {fileID: 145836132}
   - component: {fileID: 145836131}
   - component: {fileID: 145836130}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2799,7 +2819,7 @@ GameObject:
   - component: {fileID: 156140586}
   - component: {fileID: 156140585}
   - component: {fileID: 156140584}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface1 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3810,7 +3830,7 @@ GameObject:
   - component: {fileID: 188580666}
   - component: {fileID: 188580665}
   - component: {fileID: 188580664}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3936,7 +3956,7 @@ GameObject:
   - component: {fileID: 201190331}
   - component: {fileID: 201190333}
   - component: {fileID: 201190334}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4064,7 +4084,7 @@ GameObject:
   - component: {fileID: 203013177}
   - component: {fileID: 203013179}
   - component: {fileID: 203013180}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4275,7 +4295,7 @@ GameObject:
   - component: {fileID: 206224596}
   - component: {fileID: 206224598}
   - component: {fileID: 206224599}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4760,7 +4780,7 @@ GameObject:
   - component: {fileID: 235844526}
   - component: {fileID: 235844525}
   - component: {fileID: 235844524}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4885,7 +4905,7 @@ GameObject:
   - component: {fileID: 237202622}
   - component: {fileID: 237202621}
   - component: {fileID: 237202620}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4995,7 +5015,7 @@ GameObject:
   - component: {fileID: 246038765}
   - component: {fileID: 246038764}
   - component: {fileID: 246038763}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building_1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5395,7 +5415,7 @@ GameObject:
   - component: {fileID: 271606882}
   - component: {fileID: 271606881}
   - component: {fileID: 271606880}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5834,7 +5854,7 @@ GameObject:
   - component: {fileID: 292839135}
   - component: {fileID: 292839134}
   - component: {fileID: 292839133}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6035,7 +6055,7 @@ GameObject:
   - component: {fileID: 296770420}
   - component: {fileID: 296770422}
   - component: {fileID: 296770423}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6161,7 +6181,7 @@ GameObject:
   - component: {fileID: 306236532}
   - component: {fileID: 306236531}
   - component: {fileID: 306236530}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6288,7 +6308,7 @@ GameObject:
   - component: {fileID: 307955655}
   - component: {fileID: 307955654}
   - component: {fileID: 307955653}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6851,7 +6871,7 @@ GameObject:
   - component: {fileID: 330512175}
   - component: {fileID: 330512177}
   - component: {fileID: 330512178}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fountain (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7060,7 +7080,7 @@ GameObject:
   - component: {fileID: 337751696}
   - component: {fileID: 337751695}
   - component: {fileID: 337751694}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7493,7 +7513,7 @@ GameObject:
   - component: {fileID: 354637425}
   - component: {fileID: 354637427}
   - component: {fileID: 354637428}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7904,7 +7924,7 @@ GameObject:
   - component: {fileID: 386452083}
   - component: {fileID: 386452082}
   - component: {fileID: 386452084}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8184,7 +8204,7 @@ GameObject:
   - component: {fileID: 393993731}
   - component: {fileID: 393993733}
   - component: {fileID: 393993734}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9019,7 +9039,7 @@ GameObject:
   - component: {fileID: 417624926}
   - component: {fileID: 417624928}
   - component: {fileID: 417624929}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9400,7 +9420,7 @@ GameObject:
   - component: {fileID: 427406566}
   - component: {fileID: 427406568}
   - component: {fileID: 427406569}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9526,7 +9546,7 @@ GameObject:
   - component: {fileID: 444093055}
   - component: {fileID: 444093054}
   - component: {fileID: 444093053}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10190,7 +10210,7 @@ GameObject:
   - component: {fileID: 493468883}
   - component: {fileID: 493468882}
   - component: {fileID: 493468884}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11132,7 +11152,7 @@ GameObject:
   - component: {fileID: 554065219}
   - component: {fileID: 554065218}
   - component: {fileID: 554065220}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11244,7 +11264,7 @@ GameObject:
   - component: {fileID: 557159511}
   - component: {fileID: 557159510}
   - component: {fileID: 557159509}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11454,7 +11474,7 @@ GameObject:
   - component: {fileID: 561042487}
   - component: {fileID: 561042486}
   - component: {fileID: 561042485}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12144,7 +12164,7 @@ GameObject:
   - component: {fileID: 582819575}
   - component: {fileID: 582819574}
   - component: {fileID: 582819573}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12254,7 +12274,7 @@ GameObject:
   - component: {fileID: 583315373}
   - component: {fileID: 583315372}
   - component: {fileID: 583315371}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12465,7 +12485,7 @@ GameObject:
   - component: {fileID: 600468366}
   - component: {fileID: 600468365}
   - component: {fileID: 600468364}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hospital (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12763,7 +12783,7 @@ GameObject:
   - component: {fileID: 642867882}
   - component: {fileID: 642867881}
   - component: {fileID: 642867880}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12889,7 +12909,7 @@ GameObject:
   - component: {fileID: 645345865}
   - component: {fileID: 645345864}
   - component: {fileID: 645345863}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13981,7 +14001,7 @@ GameObject:
   - component: {fileID: 776625817}
   - component: {fileID: 776625819}
   - component: {fileID: 776625820}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14148,7 +14168,7 @@ GameObject:
   - component: {fileID: 781604997}
   - component: {fileID: 781604996}
   - component: {fileID: 781604998}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14343,7 +14363,7 @@ GameObject:
   - component: {fileID: 793855018}
   - component: {fileID: 793855017}
   - component: {fileID: 793855016}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14486,6 +14506,134 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 895551366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &799128480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 799128482}
+  - component: {fileID: 799128481}
+  m_Layer: 0
+  m_Name: SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &799128481
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799128480}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &799128482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799128480}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1939629946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &806516009
 GameObject:
@@ -14786,7 +14934,7 @@ GameObject:
   - component: {fileID: 838500872}
   - component: {fileID: 838500871}
   - component: {fileID: 838500870}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15082,7 +15230,7 @@ GameObject:
   - component: {fileID: 849758311}
   - component: {fileID: 849758313}
   - component: {fileID: 849758314}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15212,7 +15360,7 @@ GameObject:
   - component: {fileID: 861798955}
   - component: {fileID: 861798954}
   - component: {fileID: 861798953}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15407,7 +15555,7 @@ GameObject:
   - component: {fileID: 877764782}
   - component: {fileID: 877764784}
   - component: {fileID: 877764785}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15794,7 +15942,7 @@ GameObject:
   - component: {fileID: 882990113}
   - component: {fileID: 882990112}
   - component: {fileID: 882990111}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16175,7 +16323,7 @@ GameObject:
   - component: {fileID: 893744611}
   - component: {fileID: 893744613}
   - component: {fileID: 893744614}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16301,7 +16449,7 @@ GameObject:
   - component: {fileID: 893995259}
   - component: {fileID: 893995258}
   - component: {fileID: 893995257}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building_1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16769,7 +16917,7 @@ GameObject:
   - component: {fileID: 909443499}
   - component: {fileID: 909443498}
   - component: {fileID: 909443497}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17747,7 +17895,7 @@ GameObject:
   - component: {fileID: 971572572}
   - component: {fileID: 971572574}
   - component: {fileID: 971572575}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17873,7 +18021,7 @@ GameObject:
   - component: {fileID: 983826657}
   - component: {fileID: 983826659}
   - component: {fileID: 983826660}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17999,7 +18147,7 @@ GameObject:
   - component: {fileID: 991444731}
   - component: {fileID: 991444733}
   - component: {fileID: 991444734}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hospital (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18212,7 +18360,7 @@ GameObject:
   - component: {fileID: 1010070595}
   - component: {fileID: 1010070594}
   - component: {fileID: 1010070593}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18432,7 +18580,7 @@ GameObject:
   - component: {fileID: 1018435772}
   - component: {fileID: 1018435774}
   - component: {fileID: 1018435775}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18840,7 +18988,7 @@ GameObject:
   - component: {fileID: 1043220559}
   - component: {fileID: 1043220558}
   - component: {fileID: 1043220557}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19223,7 +19371,7 @@ GameObject:
   - component: {fileID: 1055969809}
   - component: {fileID: 1055969811}
   - component: {fileID: 1055969812}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19828,7 +19976,7 @@ GameObject:
   - component: {fileID: 1104803246}
   - component: {fileID: 1104803248}
   - component: {fileID: 1104803249}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20038,7 +20186,7 @@ GameObject:
   - component: {fileID: 1117666035}
   - component: {fileID: 1117666034}
   - component: {fileID: 1117666033}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20792,7 +20940,7 @@ GameObject:
   - component: {fileID: 1177802524}
   - component: {fileID: 1177802523}
   - component: {fileID: 1177802522}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20889,6 +21037,134 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177802520}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!1 &1180265401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1180265403}
+  - component: {fileID: 1180265402}
+  m_Layer: 0
+  m_Name: BGM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1180265402
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180265401}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1180265403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180265401}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1939629946}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1183446229
 GameObject:
   m_ObjectHideFlags: 0
@@ -20902,7 +21178,7 @@ GameObject:
   - component: {fileID: 1183446233}
   - component: {fileID: 1183446232}
   - component: {fileID: 1183446231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21691,7 +21967,7 @@ GameObject:
   - component: {fileID: 1242756214}
   - component: {fileID: 1242756213}
   - component: {fileID: 1242756212}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21987,7 +22263,7 @@ GameObject:
   - component: {fileID: 1264754339}
   - component: {fileID: 1264754341}
   - component: {fileID: 1264754342}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22251,7 +22527,7 @@ GameObject:
   - component: {fileID: 1282254786}
   - component: {fileID: 1282254788}
   - component: {fileID: 1282254789}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22631,7 +22907,7 @@ GameObject:
   - component: {fileID: 1311195914}
   - component: {fileID: 1311195913}
   - component: {fileID: 1311195912}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22741,7 +23017,7 @@ GameObject:
   - component: {fileID: 1313189229}
   - component: {fileID: 1313189228}
   - component: {fileID: 1313189227}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23492,7 +23768,7 @@ GameObject:
   - component: {fileID: 1349285184}
   - component: {fileID: 1349285183}
   - component: {fileID: 1349285182}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24155,7 +24431,7 @@ GameObject:
   - component: {fileID: 1392254622}
   - component: {fileID: 1392254621}
   - component: {fileID: 1392254620}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24706,7 +24982,7 @@ GameObject:
   - component: {fileID: 1411035361}
   - component: {fileID: 1411035363}
   - component: {fileID: 1411035364}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24832,7 +25108,7 @@ GameObject:
   - component: {fileID: 1417625431}
   - component: {fileID: 1417625433}
   - component: {fileID: 1417625434}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24958,7 +25234,7 @@ GameObject:
   - component: {fileID: 1427694727}
   - component: {fileID: 1427694726}
   - component: {fileID: 1427694725}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25367,7 +25643,7 @@ GameObject:
   - component: {fileID: 1433980145}
   - component: {fileID: 1433980144}
   - component: {fileID: 1433980143}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26290,7 +26566,7 @@ GameObject:
   - component: {fileID: 1490164397}
   - component: {fileID: 1490164396}
   - component: {fileID: 1490164395}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hospital (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26417,7 +26693,7 @@ GameObject:
   - component: {fileID: 1490803201}
   - component: {fileID: 1490803200}
   - component: {fileID: 1490803199}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27338,7 +27614,7 @@ GameObject:
   - component: {fileID: 1523886156}
   - component: {fileID: 1523886155}
   - component: {fileID: 1523886154}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (66)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27766,7 +28042,7 @@ GameObject:
   - component: {fileID: 1574200328}
   - component: {fileID: 1574200327}
   - component: {fileID: 1574200326}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28077,7 +28353,7 @@ GameObject:
   - component: {fileID: 1598383946}
   - component: {fileID: 1598383945}
   - component: {fileID: 1598383944}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28267,7 +28543,7 @@ GameObject:
   - component: {fileID: 1610105833}
   - component: {fileID: 1610105835}
   - component: {fileID: 1610105836}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28770,7 +29046,7 @@ GameObject:
   - component: {fileID: 1645583473}
   - component: {fileID: 1645583472}
   - component: {fileID: 1645583471}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface1 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29000,7 +29276,7 @@ GameObject:
   - component: {fileID: 1666195329}
   - component: {fileID: 1666195328}
   - component: {fileID: 1666195327}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29635,7 +29911,7 @@ GameObject:
   - component: {fileID: 1685328221}
   - component: {fileID: 1685328220}
   - component: {fileID: 1685328219}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29795,7 +30071,7 @@ GameObject:
   - component: {fileID: 1695129825}
   - component: {fileID: 1695129824}
   - component: {fileID: 1695129823}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29905,7 +30181,7 @@ GameObject:
   - component: {fileID: 1697373797}
   - component: {fileID: 1697373796}
   - component: {fileID: 1697373795}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30115,7 +30391,7 @@ GameObject:
   - component: {fileID: 1712347000}
   - component: {fileID: 1712346999}
   - component: {fileID: 1712346998}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30882,7 +31158,7 @@ GameObject:
   - component: {fileID: 1785390011}
   - component: {fileID: 1785390013}
   - component: {fileID: 1785390014}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31093,7 +31369,7 @@ GameObject:
   - component: {fileID: 1794032096}
   - component: {fileID: 1794032098}
   - component: {fileID: 1794032099}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31525,7 +31801,7 @@ GameObject:
   - component: {fileID: 1816462397}
   - component: {fileID: 1816462399}
   - component: {fileID: 1816462400}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31651,7 +31927,7 @@ GameObject:
   - component: {fileID: 1848826619}
   - component: {fileID: 1848826618}
   - component: {fileID: 1848826617}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31893,7 +32169,7 @@ GameObject:
   - component: {fileID: 1851979991}
   - component: {fileID: 1851979993}
   - component: {fileID: 1851979994}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32019,7 +32295,7 @@ GameObject:
   - component: {fileID: 1863863173}
   - component: {fileID: 1863863175}
   - component: {fileID: 1863863176}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32487,7 +32763,7 @@ GameObject:
   - component: {fileID: 1883464431}
   - component: {fileID: 1883464430}
   - component: {fileID: 1883464429}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32676,6 +32952,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ac35393181cd22a478fa9c37ca84c51c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148781548397076843, guid: ac35393181cd22a478fa9c37ca84c51c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5639405848544218604, guid: ac35393181cd22a478fa9c37ca84c51c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.293
@@ -32687,6 +32971,10 @@ PrefabInstance:
     - target: {fileID: 5639405848544218604, guid: ac35393181cd22a478fa9c37ca84c51c, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.238
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750397243111347764, guid: ac35393181cd22a478fa9c37ca84c51c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -32986,7 +33274,7 @@ GameObject:
   - component: {fileID: 1902168622}
   - component: {fileID: 1902168621}
   - component: {fileID: 1902168620}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33313,7 +33601,7 @@ GameObject:
   - component: {fileID: 1925506981}
   - component: {fileID: 1925506983}
   - component: {fileID: 1925506984}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33694,7 +33982,7 @@ GameObject:
   - component: {fileID: 1935964347}
   - component: {fileID: 1935964349}
   - component: {fileID: 1935964350}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33855,7 +34143,7 @@ GameObject:
   - component: {fileID: 1936917717}
   - component: {fileID: 1936917716}
   - component: {fileID: 1936917718}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33952,6 +34240,62 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.012456109, y: 0.011634026, z: 0.012456109}
   m_Center: {x: 9.313226e-10, y: -0.0002417441, z: -0.0000000037252903}
+--- !u!1 &1939629944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939629946}
+  - component: {fileID: 1939629945}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1939629945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939629944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc91b4918fab6dd4891056a70997ce2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmSource: {fileID: 1180265402}
+  sfxSource: {fileID: 799128481}
+  bgmClips:
+  - {fileID: 8300000, guid: 341cb5f39e8c01a46b259afccc5704c7, type: 3}
+  sfxClips:
+  - {fileID: 8300000, guid: b19555f4f1d8077459bc8389e6851ccc, type: 3}
+  - {fileID: 8300000, guid: ec4ecc752df3cd24e84a18324ac6716a, type: 3}
+  bgmVolume: 0.5
+  sfxVolume: 1
+  defaultSfxCooldown: 0.5
+--- !u!4 &1939629946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939629944}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 69.61402, y: 94.20653, z: -46.715397}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1180265403}
+  - {fileID: 799128482}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1940986357
 GameObject:
   m_ObjectHideFlags: 0
@@ -34429,7 +34773,7 @@ GameObject:
   - component: {fileID: 1988581256}
   - component: {fileID: 1988581258}
   - component: {fileID: 1988581259}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34693,7 +35037,7 @@ GameObject:
   - component: {fileID: 1991422906}
   - component: {fileID: 1991422908}
   - component: {fileID: 1991422909}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34819,7 +35163,7 @@ GameObject:
   - component: {fileID: 2002926399}
   - component: {fileID: 2002926398}
   - component: {fileID: 2002926397}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35030,7 +35374,7 @@ GameObject:
   - component: {fileID: 2004191617}
   - component: {fileID: 2004191616}
   - component: {fileID: 2004191615}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35525,7 +35869,7 @@ GameObject:
   - component: {fileID: 2048661282}
   - component: {fileID: 2048661284}
   - component: {fileID: 2048661285}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hospital (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35653,7 +35997,7 @@ GameObject:
   - component: {fileID: 2053791036}
   - component: {fileID: 2053791038}
   - component: {fileID: 2053791039}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36203,7 +36547,7 @@ GameObject:
   - component: {fileID: 2079409428}
   - component: {fileID: 2079409427}
   - component: {fileID: 2079409426}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Building_1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36500,7 +36844,7 @@ GameObject:
   - component: {fileID: 2099395223}
   - component: {fileID: 2099395222}
   - component: {fileID: 2099395221}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallHouse (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37182,3 +37526,4 @@ SceneRoots:
   - {fileID: 84949311}
   - {fileID: 1890211644}
   - {fileID: 1693018029}
+  - {fileID: 1939629946}
