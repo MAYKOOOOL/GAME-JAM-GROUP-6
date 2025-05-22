@@ -43,10 +43,12 @@ public class AIPatrolAndChase : MonoBehaviour
         {
             if (!isChasing)
             {
+
                 if (anim != null)
                 {
                     anim.SetBool("isChasing", true);
                 }
+                AudioManager.Instance.PlaySFX("Sitsit");
 
 
                 isChasing = true;

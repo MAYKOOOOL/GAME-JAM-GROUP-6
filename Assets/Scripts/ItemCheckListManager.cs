@@ -70,6 +70,9 @@ public class ItemChecklistManager : MonoBehaviour
 
     public void TriggerLoseCondition()
     {
+        AudioManager.Instance.PlaySFX("Nadakop");
+
+
         Debug.Log("You lost!");
         if (losePanel != null)
             losePanel.SetActive(true);

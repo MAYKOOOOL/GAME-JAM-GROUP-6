@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
@@ -20,10 +20,10 @@ public class AudioManager : MonoBehaviour
     private Dictionary<string, AudioClip> bgmDict = new Dictionary<string, AudioClip>();
     private Dictionary<string, AudioClip> sfxDict = new Dictionary<string, AudioClip>();
 
-    private void Start()
-    {
-        AudioManager.Instance.PlayBGM("BGM");
-    }
+    // Cooldown management
+    private Dictionary<string, float> sfxCooldowns = new Dictionary<string, float>();
+    public float defaultSfxCooldown = 0.5f; // Default cooldown for all SFX in seconds
+
     void Awake()
     {
         // Singleton pattern
@@ -73,18 +73,28 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // Stop background music
-    public void StopBGM()
-    {
-        bgmSource.Stop();
-    }
-
-    // Play a one-shot sound effect
+    // Play a one-shot sound effect with cooldown check, and ensure it completes before allowing another play
     public void PlaySFX(string clipName)
     {
         if (sfxDict.ContainsKey(clipName))
         {
+            // Check if the sound is already playing
+            if (sfxSource.isPlaying)
+            {
+                return; // Don't play the sound again until the current one finishes
+            }
+
+            // Check for cooldown
+            if (sfxCooldowns.ContainsKey(clipName) && Time.time - sfxCooldowns[clipName] < defaultSfxCooldown)
+            {
+                return; // Cooldown is still active, don't play the sound
+            }
+
+            // Play the sound effect
             sfxSource.PlayOneShot(sfxDict[clipName], sfxVolume);
+
+            // Update the cooldown timestamp
+            sfxCooldowns[clipName] = Time.time;
         }
         else
         {

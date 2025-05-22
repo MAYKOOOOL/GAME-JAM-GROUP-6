@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("Click");
         SceneManager.LoadSceneAsync(1);
-        AudioManager.Instance.StopBGM();
+        //AudioManager.Instance.StopBGM();
         AudioManager.Instance.PlayBGM("BGM 2");
     }
 

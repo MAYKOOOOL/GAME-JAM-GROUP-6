@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.PlayBGM("BGM");
         rb = GetComponent<Rigidbody>();
         moveSpeed = walkSpeed;
         Cursor.lockState = CursorLockMode.Locked;
