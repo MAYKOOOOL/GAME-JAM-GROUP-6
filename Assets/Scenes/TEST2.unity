@@ -948,6 +948,10 @@ PrefabInstance:
     - {fileID: -7410723286201468713, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
     - {fileID: 3672548509089925874, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
     - {fileID: 3889987309386925154, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+    - {fileID: -7454297823963037342, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+    - {fileID: 4432858316680300197, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+    - {fileID: 8196798520224901374, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+    - {fileID: 5994721076960434074, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
       insertIndex: 1
@@ -971,10 +975,10 @@ PrefabInstance:
       insertIndex: 9
       addedObject: {fileID: 554065217}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
-      insertIndex: 11
+      insertIndex: -1
       addedObject: {fileID: 991444730}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
-      insertIndex: 12
+      insertIndex: -1
       addedObject: {fileID: 2048661281}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
       insertIndex: -1
@@ -1076,12 +1080,27 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -177984336840072155, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 895549435}
+    - targetCorrespondingSourceObject: {fileID: -177984336840072155, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 895549436}
     - targetCorrespondingSourceObject: {fileID: 8708461078708779553, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 279819402}
+    - targetCorrespondingSourceObject: {fileID: 8708461078708779553, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 279819403}
     - targetCorrespondingSourceObject: {fileID: -4139999717627085057, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 579025523}
+    - targetCorrespondingSourceObject: {fileID: -4139999717627085057, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 579025524}
+    - targetCorrespondingSourceObject: {fileID: -1637404393950251687, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 778009432}
+    - targetCorrespondingSourceObject: {fileID: -1637404393950251687, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 778009433}
   m_SourcePrefab: {fileID: 100100000, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
 --- !u!1 &95624676
 GameObject:
@@ -1593,6 +1612,7 @@ GameObject:
   - component: {fileID: 136032323}
   - component: {fileID: 136032322}
   - component: {fileID: 136032324}
+  - component: {fileID: 136032325}
   m_Layer: 0
   m_Name: Building1 (2)
   m_TagString: Untagged
@@ -1609,7 +1629,7 @@ Transform:
   m_GameObject: {fileID: 136032320}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.02623, y: 0.0205, z: 0.05598}
+  m_LocalPosition: {x: 0.02623, y: 0.0211, z: 0.05598}
   m_LocalScale: {x: 1.8577828, y: 1.8577828, z: 1.8577828}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1685,6 +1705,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &136032325
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136032320}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.010960675, y: 0.01149695, z: 0.010960675}
+  m_Center: {x: 0, y: 0.00011726492, z: 0}
 --- !u!1 &144801448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2751,6 +2792,8 @@ GameObject:
   - component: {fileID: 201190330}
   - component: {fileID: 201190332}
   - component: {fileID: 201190331}
+  - component: {fileID: 201190333}
+  - component: {fileID: 201190334}
   m_Layer: 0
   m_Name: Hall (2)
   m_TagString: Untagged
@@ -2829,6 +2872,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201190329}
   m_Mesh: {fileID: 6864364205052522755, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &201190333
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201190329}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.005555, y: 0.020000001, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.012, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &201190334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201190329}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011486281, y: 0.039974127, z: 0.011486281}
+  m_Center: {x: -4.656613e-10, y: 0.011987664, z: -4.656613e-10}
 --- !u!1 &203013175
 GameObject:
   m_ObjectHideFlags: 0
@@ -2840,6 +2920,7 @@ GameObject:
   - component: {fileID: 203013176}
   - component: {fileID: 203013178}
   - component: {fileID: 203013177}
+  - component: {fileID: 203013179}
   m_Layer: 0
   m_Name: SmallHouse (28)
   m_TagString: Untagged
@@ -2916,6 +2997,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203013175}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &203013179
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203013175}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &203591684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,6 +3109,8 @@ GameObject:
   - component: {fileID: 206224595}
   - component: {fileID: 206224597}
   - component: {fileID: 206224596}
+  - component: {fileID: 206224598}
+  - component: {fileID: 206224599}
   m_Layer: 0
   m_Name: Hall (1)
   m_TagString: Untagged
@@ -3090,6 +3189,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 206224594}
   m_Mesh: {fileID: 6864364205052522755, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &206224598
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206224594}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.020000001, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.012, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &206224599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206224594}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011486281, y: 0.039974127, z: 0.011486281}
+  m_Center: {x: 0.0000000037252903, y: 0.011987664, z: 0}
 --- !u!1 &212094471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3743,6 +3879,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &279819403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279819398}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.022313997, y: 0.08263109, z: 0.022313999}
+  m_Center: {x: -9.313226e-10, y: -0.000000007450581, z: 0}
 --- !u!1 &285797218
 GameObject:
   m_ObjectHideFlags: 0
@@ -4083,6 +4240,8 @@ GameObject:
   - component: {fileID: 296770419}
   - component: {fileID: 296770421}
   - component: {fileID: 296770420}
+  - component: {fileID: 296770422}
+  - component: {fileID: 296770423}
   m_Layer: 0
   m_Name: SmallHouse (1)
   m_TagString: Untagged
@@ -4159,6 +4318,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296770418}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &296770422
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296770418}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &296770423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296770418}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.012456109, y: 0.011634026, z: 0.012456109}
+  m_Center: {x: 0, y: -0.0002417441, z: -0.0000000037252903}
 --- !u!1 &308854642
 GameObject:
   m_ObjectHideFlags: 0
@@ -4511,6 +4707,7 @@ GameObject:
   - component: {fileID: 330512176}
   - component: {fileID: 330512175}
   - component: {fileID: 330512177}
+  - component: {fileID: 330512178}
   m_Layer: 0
   m_Name: Fountain (1)
   m_TagString: Untagged
@@ -4602,6 +4799,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &330512178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330512173}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.022313997, y: 0.082631096, z: 0.022313999}
+  m_Center: {x: 0, y: -0.0000000037252903, z: -0.0000000037252903}
 --- !u!1 &335496970
 GameObject:
   m_ObjectHideFlags: 0
@@ -5021,6 +5239,7 @@ GameObject:
   - component: {fileID: 354637424}
   - component: {fileID: 354637426}
   - component: {fileID: 354637425}
+  - component: {fileID: 354637427}
   m_Layer: 0
   m_Name: SmallHouse (26)
   m_TagString: Untagged
@@ -5097,6 +5316,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354637423}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &354637427
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354637423}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &363377500
 GameObject:
   m_ObjectHideFlags: 0
@@ -5394,6 +5629,7 @@ GameObject:
   - component: {fileID: 386452081}
   - component: {fileID: 386452083}
   - component: {fileID: 386452082}
+  - component: {fileID: 386452084}
   m_Layer: 0
   m_Name: SmallHouse (8)
   m_TagString: Untagged
@@ -5470,6 +5706,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386452080}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!65 &386452084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386452080}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.012456109, y: 0.011634026, z: 0.012456109}
+  m_Center: {x: 9.313226e-10, y: -0.0002417441, z: 0}
 --- !u!1 &389948658
 GameObject:
   m_ObjectHideFlags: 0
@@ -5651,6 +5908,7 @@ GameObject:
   - component: {fileID: 393993730}
   - component: {fileID: 393993732}
   - component: {fileID: 393993731}
+  - component: {fileID: 393993733}
   m_Layer: 0
   m_Name: SmallHouse (24)
   m_TagString: Untagged
@@ -5727,6 +5985,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393993729}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &393993733
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393993729}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &394777131
 GameObject:
   m_ObjectHideFlags: 0
@@ -6342,6 +6616,7 @@ GameObject:
   - component: {fileID: 417624925}
   - component: {fileID: 417624927}
   - component: {fileID: 417624926}
+  - component: {fileID: 417624928}
   m_Layer: 0
   m_Name: SmallHouse (20)
   m_TagString: Untagged
@@ -6418,6 +6693,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417624924}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &417624928
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417624924}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &417628612
 GameObject:
   m_ObjectHideFlags: 0
@@ -6684,6 +6975,7 @@ GameObject:
   - component: {fileID: 427406565}
   - component: {fileID: 427406567}
   - component: {fileID: 427406566}
+  - component: {fileID: 427406568}
   m_Layer: 0
   m_Name: SmallHouse (25)
   m_TagString: Untagged
@@ -6760,6 +7052,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427406564}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &427406568
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427406564}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &463051989
 GameObject:
   m_ObjectHideFlags: 0
@@ -8230,6 +8538,7 @@ GameObject:
   - component: {fileID: 554065217}
   - component: {fileID: 554065219}
   - component: {fileID: 554065218}
+  - component: {fileID: 554065220}
   m_Layer: 0
   m_Name: Hall (3)
   m_TagString: Untagged
@@ -8308,6 +8617,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554065216}
   m_Mesh: {fileID: 6864364205052522755, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!65 &554065220
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554065216}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0114862835, y: 0.039974127, z: 0.011486282}
+  m_Center: {x: 4.656613e-10, y: 0.011987664, z: 0.0000000018626451}
 --- !u!1 &558265653
 GameObject:
   m_ObjectHideFlags: 0
@@ -8953,6 +9283,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.012, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &579025524
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579025519}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011486282, y: 0.039974127, z: 0.011486282}
+  m_Center: {x: 0, y: 0.011987664, z: -6.4028427e-10}
 --- !u!1 &597155455
 GameObject:
   m_ObjectHideFlags: 0
@@ -10185,6 +10536,7 @@ GameObject:
   - component: {fileID: 776625816}
   - component: {fileID: 776625818}
   - component: {fileID: 776625817}
+  - component: {fileID: 776625819}
   m_Layer: 0
   m_Name: SmallHouse (30)
   m_TagString: Untagged
@@ -10261,6 +10613,64 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776625815}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &776625819
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776625815}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!1 &778009428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1637404393950251687, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+  m_PrefabInstance: {fileID: 84949311}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &778009432
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778009428}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.0050000004, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &778009433
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778009428}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011389315, y: 0.010647471, z: 0.011389308}
+  m_Center: {x: 0.0000000013963808, y: 0.00032369912, z: 0.0000000011641527}
 --- !u!1 &781604994
 GameObject:
   m_ObjectHideFlags: 0
@@ -10931,6 +11341,7 @@ GameObject:
   - component: {fileID: 849758310}
   - component: {fileID: 849758312}
   - component: {fileID: 849758311}
+  - component: {fileID: 849758313}
   m_Layer: 0
   m_Name: SmallHouse (19)
   m_TagString: Untagged
@@ -11007,6 +11418,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849758309}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &849758313
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849758309}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &859287595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
@@ -11108,6 +11535,7 @@ GameObject:
   - component: {fileID: 877764781}
   - component: {fileID: 877764783}
   - component: {fileID: 877764782}
+  - component: {fileID: 877764784}
   m_Layer: 0
   m_Name: SmallHouse (21)
   m_TagString: Untagged
@@ -11184,6 +11612,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877764780}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &877764784
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877764780}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &878443955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11711,6 +12155,8 @@ GameObject:
   - component: {fileID: 893744610}
   - component: {fileID: 893744612}
   - component: {fileID: 893744611}
+  - component: {fileID: 893744613}
+  - component: {fileID: 893744614}
   m_Layer: 0
   m_Name: SmallHouse (11)
   m_TagString: Untagged
@@ -11787,6 +12233,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893744609}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &893744613
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893744609}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &893744614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893744609}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.012456109, y: 0.011634025, z: 0.012456109}
+  m_Center: {x: 0.0000000018626451, y: -0.00024174641, z: 0}
 --- !u!1 &895448611
 GameObject:
   m_ObjectHideFlags: 0
@@ -11893,6 +12376,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &895549436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895549431}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.010960675, y: 0.01149695, z: 0.010960675}
+  m_Center: {x: 0.0000000037252903, y: 0.00011726539, z: 0}
 --- !u!1 &895551365
 GameObject:
   m_ObjectHideFlags: 0
@@ -12823,6 +13327,7 @@ GameObject:
   - component: {fileID: 971572571}
   - component: {fileID: 971572573}
   - component: {fileID: 971572572}
+  - component: {fileID: 971572574}
   m_Layer: 0
   m_Name: SmallHouse (32)
   m_TagString: Untagged
@@ -12899,6 +13404,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971572570}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &971572574
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971572570}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &983826655
 GameObject:
   m_ObjectHideFlags: 0
@@ -12910,6 +13431,7 @@ GameObject:
   - component: {fileID: 983826656}
   - component: {fileID: 983826658}
   - component: {fileID: 983826657}
+  - component: {fileID: 983826659}
   m_Layer: 0
   m_Name: SmallHouse (18)
   m_TagString: Untagged
@@ -12986,6 +13508,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983826655}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &983826659
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983826655}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &991444729
 GameObject:
   m_ObjectHideFlags: 0
@@ -12997,6 +13535,8 @@ GameObject:
   - component: {fileID: 991444730}
   - component: {fileID: 991444732}
   - component: {fileID: 991444731}
+  - component: {fileID: 991444733}
+  - component: {fileID: 991444734}
   m_Layer: 0
   m_Name: Hospital (1)
   m_TagString: Untagged
@@ -13013,7 +13553,7 @@ Transform:
   m_GameObject: {fileID: 991444729}
   serializedVersion: 2
   m_LocalRotation: {x: 0.9999849, y: 0.0053496324, z: 0.001233574, w: -0.000006599267}
-  m_LocalPosition: {x: 0.0119, y: 0.0238, z: 0.0843}
+  m_LocalPosition: {x: 0.0119, y: 0.0225, z: 0.0843}
   m_LocalScale: {x: 2.1798337, y: 2.1798337, z: 2.1798337}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13075,6 +13615,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991444729}
   m_Mesh: {fileID: 5105444607536947446, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &991444733
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991444729}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.0050000004, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &991444734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991444729}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011389315, y: 0.010647471, z: 0.011389308}
+  m_Center: {x: -4.662643e-10, y: 0.00032369912, z: 2.3283006e-10}
 --- !u!1 &1005305939
 GameObject:
   m_ObjectHideFlags: 0
@@ -13171,6 +13748,7 @@ GameObject:
   - component: {fileID: 1018435771}
   - component: {fileID: 1018435773}
   - component: {fileID: 1018435772}
+  - component: {fileID: 1018435774}
   m_Layer: 0
   m_Name: SmallHouse (31)
   m_TagString: Untagged
@@ -13247,6 +13825,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018435770}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1018435774
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018435770}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1020301389
 GameObject:
   m_ObjectHideFlags: 0
@@ -13513,6 +14107,7 @@ GameObject:
   - component: {fileID: 1055969808}
   - component: {fileID: 1055969810}
   - component: {fileID: 1055969809}
+  - component: {fileID: 1055969811}
   m_Layer: 0
   m_Name: SmallHouse (3)
   m_TagString: Untagged
@@ -13589,6 +14184,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055969807}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1055969811
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055969807}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1058912534
 GameObject:
   m_ObjectHideFlags: 0
@@ -14080,6 +14691,7 @@ GameObject:
   - component: {fileID: 1104803247}
   - component: {fileID: 1104803246}
   - component: {fileID: 1104803248}
+  - component: {fileID: 1104803249}
   m_Layer: 0
   m_Name: Building1 (3)
   m_TagString: Untagged
@@ -14172,6 +14784,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &1104803249
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104803244}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.010960675, y: 0.01149695, z: 0.010960675}
+  m_Center: {x: 0, y: 0.00011726539, z: 0.0000000018626451}
 --- !u!1 &1111878112
 GameObject:
   m_ObjectHideFlags: 0
@@ -15609,6 +16242,8 @@ GameObject:
   - component: {fileID: 1264754338}
   - component: {fileID: 1264754340}
   - component: {fileID: 1264754339}
+  - component: {fileID: 1264754341}
+  - component: {fileID: 1264754342}
   m_Layer: 0
   m_Name: SmallHouse (16)
   m_TagString: Untagged
@@ -15685,6 +16320,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264754337}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1264754341
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264754337}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &1264754342
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264754337}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.012456111, y: 0.011634026, z: 0.012456111}
+  m_Center: {x: -0.0000000037252903, y: -0.0002417441, z: 0.0000000037252903}
 --- !u!1 &1279731845
 GameObject:
   m_ObjectHideFlags: 0
@@ -15834,6 +16506,7 @@ GameObject:
   - component: {fileID: 1282254785}
   - component: {fileID: 1282254787}
   - component: {fileID: 1282254786}
+  - component: {fileID: 1282254788}
   m_Layer: 0
   m_Name: SmallHouse (23)
   m_TagString: Untagged
@@ -15910,6 +16583,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282254784}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1282254788
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282254784}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1293267459
 GameObject:
   m_ObjectHideFlags: 0
@@ -17271,6 +17960,7 @@ GameObject:
   - component: {fileID: 1411035360}
   - component: {fileID: 1411035362}
   - component: {fileID: 1411035361}
+  - component: {fileID: 1411035363}
   m_Layer: 0
   m_Name: SmallHouse (22)
   m_TagString: Untagged
@@ -17347,6 +18037,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411035359}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1411035363
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411035359}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1417625429
 GameObject:
   m_ObjectHideFlags: 0
@@ -17358,6 +18064,7 @@ GameObject:
   - component: {fileID: 1417625430}
   - component: {fileID: 1417625432}
   - component: {fileID: 1417625431}
+  - component: {fileID: 1417625433}
   m_Layer: 0
   m_Name: SmallHouse (27)
   m_TagString: Untagged
@@ -17434,6 +18141,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417625429}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1417625433
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417625429}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1427881512
 GameObject:
   m_ObjectHideFlags: 0
@@ -19809,6 +20532,7 @@ GameObject:
   - component: {fileID: 1610105832}
   - component: {fileID: 1610105834}
   - component: {fileID: 1610105833}
+  - component: {fileID: 1610105835}
   m_Layer: 0
   m_Name: SmallHouse (35)
   m_TagString: Untagged
@@ -19885,6 +20609,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610105831}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1610105835
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610105831}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1611286386
 GameObject:
   m_ObjectHideFlags: 0
@@ -21429,6 +22169,7 @@ GameObject:
   - component: {fileID: 1785390010}
   - component: {fileID: 1785390012}
   - component: {fileID: 1785390011}
+  - component: {fileID: 1785390013}
   m_Layer: 0
   m_Name: SmallHouse (34)
   m_TagString: Untagged
@@ -21505,6 +22246,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785390009}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1785390013
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785390009}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1790418473
 GameObject:
   m_ObjectHideFlags: 0
@@ -21602,6 +22359,7 @@ GameObject:
   - component: {fileID: 1794032097}
   - component: {fileID: 1794032096}
   - component: {fileID: 1794032098}
+  - component: {fileID: 1794032099}
   m_Layer: 0
   m_Name: Building1 (1)
   m_TagString: Untagged
@@ -21694,6 +22452,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &1794032099
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794032094}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.010960678, y: 0.01149695, z: 0.010960678}
+  m_Center: {x: 0.0000000037252903, y: 0.00011726539, z: 0}
 --- !u!1001 &1807051501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21917,6 +22696,7 @@ GameObject:
   - component: {fileID: 1816462396}
   - component: {fileID: 1816462398}
   - component: {fileID: 1816462397}
+  - component: {fileID: 1816462399}
   m_Layer: 0
   m_Name: SmallHouse (36)
   m_TagString: Untagged
@@ -21993,6 +22773,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816462395}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1816462399
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816462395}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1850505866
 GameObject:
   m_ObjectHideFlags: 0
@@ -22120,6 +22916,8 @@ GameObject:
   - component: {fileID: 1851979990}
   - component: {fileID: 1851979992}
   - component: {fileID: 1851979991}
+  - component: {fileID: 1851979993}
+  - component: {fileID: 1851979994}
   m_Layer: 0
   m_Name: SmallHouse (17)
   m_TagString: Untagged
@@ -22196,6 +22994,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851979989}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1851979993
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851979989}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &1851979994
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851979989}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.012456111, y: 0.011634026, z: 0.012456111}
+  m_Center: {x: -0.0000000037252903, y: -0.0002417441, z: 0.0000000037252903}
 --- !u!1 &1863863171
 GameObject:
   m_ObjectHideFlags: 0
@@ -22207,6 +23042,8 @@ GameObject:
   - component: {fileID: 1863863172}
   - component: {fileID: 1863863174}
   - component: {fileID: 1863863173}
+  - component: {fileID: 1863863175}
+  - component: {fileID: 1863863176}
   m_Layer: 0
   m_Name: SmallHouse (2)
   m_TagString: Untagged
@@ -22283,6 +23120,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863863171}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1863863175
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863863171}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &1863863176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863863171}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.012456109, y: 0.011634026, z: 0.012456109}
+  m_Center: {x: 0, y: -0.0002417441, z: -0.0000000037252903}
 --- !u!1 &1863990653
 GameObject:
   m_ObjectHideFlags: 0
@@ -22854,6 +23728,7 @@ GameObject:
   - component: {fileID: 1925506980}
   - component: {fileID: 1925506982}
   - component: {fileID: 1925506981}
+  - component: {fileID: 1925506983}
   m_Layer: 0
   m_Name: SmallHouse (38)
   m_TagString: Untagged
@@ -22930,6 +23805,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925506979}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1925506983
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925506979}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1926201644
 GameObject:
   m_ObjectHideFlags: 0
@@ -23196,6 +24087,7 @@ GameObject:
   - component: {fileID: 1935964346}
   - component: {fileID: 1935964348}
   - component: {fileID: 1935964347}
+  - component: {fileID: 1935964349}
   m_Layer: 0
   m_Name: SmallHouse (33)
   m_TagString: Untagged
@@ -23272,6 +24164,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935964345}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1935964349
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935964345}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1936750749
 GameObject:
   m_ObjectHideFlags: 0
@@ -23318,6 +24226,7 @@ GameObject:
   - component: {fileID: 1936917715}
   - component: {fileID: 1936917717}
   - component: {fileID: 1936917716}
+  - component: {fileID: 1936917718}
   m_Layer: 0
   m_Name: SmallHouse (7)
   m_TagString: Untagged
@@ -23394,6 +24303,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936917714}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!65 &1936917718
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936917714}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.012456109, y: 0.011634026, z: 0.012456109}
+  m_Center: {x: 9.313226e-10, y: -0.0002417441, z: -0.0000000037252903}
 --- !u!1 &1940986357
 GameObject:
   m_ObjectHideFlags: 0
@@ -23869,6 +24799,7 @@ GameObject:
   - component: {fileID: 1988581255}
   - component: {fileID: 1988581257}
   - component: {fileID: 1988581256}
+  - component: {fileID: 1988581258}
   m_Layer: 0
   m_Name: SmallHouse (29)
   m_TagString: Untagged
@@ -23945,6 +24876,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988581254}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1988581258
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988581254}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1989917922
 GameObject:
   m_ObjectHideFlags: 0
@@ -24094,6 +25041,7 @@ GameObject:
   - component: {fileID: 1991422905}
   - component: {fileID: 1991422907}
   - component: {fileID: 1991422906}
+  - component: {fileID: 1991422908}
   m_Layer: 0
   m_Name: SmallHouse (37)
   m_TagString: Untagged
@@ -24170,6 +25118,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991422904}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &1991422908
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991422904}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2003342151
 GameObject:
   m_ObjectHideFlags: 0
@@ -24635,6 +25599,8 @@ GameObject:
   - component: {fileID: 2048661281}
   - component: {fileID: 2048661283}
   - component: {fileID: 2048661282}
+  - component: {fileID: 2048661284}
+  - component: {fileID: 2048661285}
   m_Layer: 0
   m_Name: Hospital (2)
   m_TagString: Untagged
@@ -24651,8 +25617,8 @@ Transform:
   m_GameObject: {fileID: 2048661280}
   serializedVersion: 2
   m_LocalRotation: {x: 0.9999849, y: 0.0053496324, z: 0.001233574, w: -0.000006599267}
-  m_LocalPosition: {x: 0.02819, y: 0.024, z: 0.02608}
-  m_LocalScale: {x: 2.1798337, y: 2.1798337, z: 2.1798337}
+  m_LocalPosition: {x: 0.0265, y: 0.0212, z: 0.0261}
+  m_LocalScale: {x: 1.852292, y: 1.852292, z: 1.852292}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 859287595}
@@ -24713,6 +25679,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048661280}
   m_Mesh: {fileID: 5105444607536947446, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &2048661284
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048661280}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.0050000004, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &2048661285
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048661280}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011389314, y: 0.01064747, z: 0.011389306}
+  m_Center: {x: -4.6626425e-10, y: 0.00032369955, z: 0.0000000020954751}
 --- !u!1 &2053791034
 GameObject:
   m_ObjectHideFlags: 0
@@ -24724,6 +25727,7 @@ GameObject:
   - component: {fileID: 2053791035}
   - component: {fileID: 2053791037}
   - component: {fileID: 2053791036}
+  - component: {fileID: 2053791038}
   m_Layer: 0
   m_Name: SmallHouse (12)
   m_TagString: Untagged
@@ -24800,6 +25804,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053791034}
   m_Mesh: {fileID: -4882475709338074862, guid: 94e23148a4aa2ff49ae4a6cf5f1cf9e1, type: 3}
+--- !u!208 &2053791038
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053791034}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2059591707
 GameObject:
   m_ObjectHideFlags: 0
