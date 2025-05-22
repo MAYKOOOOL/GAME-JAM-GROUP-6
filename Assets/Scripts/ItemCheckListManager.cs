@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -19,7 +19,7 @@ public class ItemChecklistManager : MonoBehaviour
         {
             if (entry.itemObject == item)
             {
-                entry.itemText.text = "<s>  (Done)" + entry.itemText.text.Replace("<s>", "").Replace("</s>", "") + "</s>";
+                entry.itemText.text = "<s> ✓ " + entry.itemText.text.Replace("-<s>", "").Replace("</s>", "") + "</s>";
                 break;
             }
         }
