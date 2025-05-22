@@ -27,8 +27,11 @@ public class AIPatrolAndChase : MonoBehaviour
 
     private bool isInvestigating = false;
 
+
+    private Animator anim;//animation
     void Start()
     {
+        anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.speed = patrolSpeed;
         GoToNextWaypoint();
@@ -40,6 +43,12 @@ public class AIPatrolAndChase : MonoBehaviour
         {
             if (!isChasing)
             {
+                if (anim != null)
+                {
+                    anim.SetBool("isChasing", true);
+                }
+
+
                 isChasing = true;
                 agent.speed = patrolSpeed * chaseSpeedMultiplier;
 
@@ -55,6 +64,11 @@ public class AIPatrolAndChase : MonoBehaviour
         }
         else if (isChasing)
         {
+            if (anim != null)
+            {
+                anim.SetBool("isChasing", false);
+            }
+
             isChasing = false;
             agent.speed = patrolSpeed;
             GoToNextWaypoint();
