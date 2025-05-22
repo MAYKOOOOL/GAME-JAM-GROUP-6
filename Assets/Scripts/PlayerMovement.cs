@@ -10,9 +10,16 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    public Transform holdPoint; 
+    public float throwForce = 10f;
+    public float pickupRange = 2f; 
+
     private Rigidbody rb;
     private float moveSpeed;
     private bool isGrounded;
+
+    private GameObject heldObject = null; 
+    private Rigidbody heldObjectRb = null;
 
     void Start()
     {
@@ -22,16 +29,17 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        GroundCheck();  // Moved here so it's updated every frame
+        GroundCheck();
         Move();
         Sprint();
         Jump();
+        HandlePickupAndThrow();
     }
 
     void GroundCheck()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-        Debug.Log("Grounded: " + isGrounded);  // Debug to verify
+        Debug.Log("Grounded: " + isGrounded);
     }
 
     void Move()
@@ -57,5 +65,52 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
+    }
+
+    void HandlePickupAndThrow()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (heldObject == null)
+            {
+                TryPickupObject();
+            }
+            else
+            {
+                ThrowObject();
+            }
+        }
+
+        if (heldObject != null)
+        {
+            heldObject.transform.position = holdPoint.position;
+        }
+    }
+
+    void TryPickupObject()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, pickupRange))
+        {
+            if (hit.collider.CompareTag("PickUp"))
+            {
+                heldObject = hit.collider.gameObject;
+                heldObjectRb = heldObject.GetComponent<Rigidbody>();
+
+                heldObjectRb.isKinematic = true;
+                heldObject.transform.SetParent(holdPoint);
+            }
+        }
+    }
+
+    void ThrowObject()
+    {
+        heldObject.transform.SetParent(null);
+        heldObjectRb.isKinematic = false;
+
+        heldObjectRb.AddForce(Camera.main.transform.forward * throwForce, ForceMode.Impulse);
+
+        heldObject = null;
+        heldObjectRb = null;
     }
 }

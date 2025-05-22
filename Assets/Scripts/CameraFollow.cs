@@ -9,7 +9,7 @@ public class FollowCamera : MonoBehaviour
     public float normalSensitivity = 100f;
     public float boostedSensitivity = 200f;
 
-    public float smoothSpeed = 10f; // Higher = smoother
+    public float smoothSpeed = 10f;
 
     private float yaw = 0f;
     private float pitch = 15f;
@@ -40,12 +40,12 @@ public class FollowCamera : MonoBehaviour
         yaw += mouseX;
         pitch -= mouseY;
         pitch = Mathf.Clamp(pitch, 5f, 60f);
-
-        // Smooth camera rotation using damping
+         
+        //damping
         currentYaw = Mathf.SmoothDampAngle(currentYaw, yaw, ref yawVelocity, 1f / smoothSpeed);
         currentPitch = Mathf.SmoothDamp(currentPitch, pitch, ref pitchVelocity, 1f / smoothSpeed);
 
-        // Calculate final camera rotation and position
+        //rotation and position
         Quaternion rotation = Quaternion.Euler(currentPitch, currentYaw, 0f);
         Vector3 offset = rotation * new Vector3(0f, 0f, -distance) + new Vector3(0, height, 0);
         transform.position = player.position + offset;
