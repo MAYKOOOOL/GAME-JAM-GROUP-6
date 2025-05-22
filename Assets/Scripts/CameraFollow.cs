@@ -41,18 +41,15 @@ public class FollowCamera : MonoBehaviour
         pitch -= mouseY;
         pitch = Mathf.Clamp(pitch, 5f, 60f);
          
-        //damping
         currentYaw = Mathf.SmoothDampAngle(currentYaw, yaw, ref yawVelocity, 1f / smoothSpeed);
         currentPitch = Mathf.SmoothDamp(currentPitch, pitch, ref pitchVelocity, 1f / smoothSpeed);
 
-        //rotation and position
         Quaternion rotation = Quaternion.Euler(currentPitch, currentYaw, 0f);
         Vector3 offset = rotation * new Vector3(0f, 0f, -distance) + new Vector3(0, height, 0);
         transform.position = player.position + offset;
 
         transform.LookAt(player.position + Vector3.up * 1.5f);
 
-        // Rotate player to match yaw
         player.rotation = Quaternion.Euler(0f, currentYaw, 0f);
     }
 }

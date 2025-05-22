@@ -1,30 +1,40 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float walkSpeed = 5f;
     public float sprintSpeed = 15f;
     public float jumpForce = 5f;
-
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-
-    public Transform holdPoint; 
+    public Transform holdPoint;
     public float throwForce = 10f;
-    public float pickupRange = 2f; 
+    public float pickupRange = 2f;
+    public Transform playerCamera;
+    public float lookSpeedX = 2f;
+    public float lookSpeedY = 2f;
+    public GameObject crosshair;
+    public float crosshairDistance = 5f;
+    public TextMeshProUGUI pickupMessageText;
 
     private Rigidbody rb;
     private float moveSpeed;
     private bool isGrounded;
-
-    private GameObject heldObject = null; 
+    private GameObject heldObject = null;
     private Rigidbody heldObjectRb = null;
+    private float yaw = 0f;
+    private float pitch = 0f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         moveSpeed = walkSpeed;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        pickupMessageText.gameObject.SetActive(false);
     }
 
     void Update()
@@ -34,22 +44,21 @@ public class PlayerMovement : MonoBehaviour
         Sprint();
         Jump();
         HandlePickupAndThrow();
+        CameraLook();
+        InteractWithCrosshair();
     }
 
     void GroundCheck()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-        Debug.Log("Grounded: " + isGrounded);
     }
 
     void Move()
     {
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
-
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
         Vector3 velocity = move.normalized * moveSpeed;
-
         Vector3 currentVelocity = rb.velocity;
         rb.velocity = new Vector3(velocity.x, currentVelocity.y, velocity.z);
     }
@@ -90,15 +99,15 @@ public class PlayerMovement : MonoBehaviour
     void TryPickupObject()
     {
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, pickupRange))
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, pickupRange))
         {
             if (hit.collider.CompareTag("PickUp"))
             {
                 heldObject = hit.collider.gameObject;
                 heldObjectRb = heldObject.GetComponent<Rigidbody>();
-
                 heldObjectRb.isKinematic = true;
                 heldObject.transform.SetParent(holdPoint);
+                ShowPickupMessage("You've picked up the item!");
             }
         }
     }
@@ -107,10 +116,53 @@ public class PlayerMovement : MonoBehaviour
     {
         heldObject.transform.SetParent(null);
         heldObjectRb.isKinematic = false;
-
-        heldObjectRb.AddForce(Camera.main.transform.forward * throwForce, ForceMode.Impulse);
-
+        heldObjectRb.AddForce(playerCamera.forward * throwForce, ForceMode.Impulse);
         heldObject = null;
         heldObjectRb = null;
+    }
+
+    void CameraLook()
+    {
+        float mouseX = Input.GetAxis("Mouse X") * lookSpeedX;
+        float mouseY = Input.GetAxis("Mouse Y") * lookSpeedY;
+        yaw += mouseX;
+        pitch -= mouseY;
+        pitch = Mathf.Clamp(pitch, -80f, 80f);
+        transform.rotation = Quaternion.Euler(0f, yaw, 0f);
+        playerCamera.localRotation = Quaternion.Euler(pitch, 0f, 0f);
+    }
+
+    void InteractWithCrosshair()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, crosshairDistance))
+        {
+            if (hit.collider.CompareTag("PickUp"))
+            {
+                if (crosshair != null)
+                {
+                    crosshair.SetActive(true);
+                }
+            }
+            else
+            {
+                if (crosshair != null)
+                {
+                    crosshair.SetActive(false);
+                }
+            }
+        }
+    }
+
+    void ShowPickupMessage(string message)
+    {
+        pickupMessageText.text = message;
+        pickupMessageText.gameObject.SetActive(true);
+        Invoke("HidePickupMessage", 2f);
+    }
+
+    void HidePickupMessage()
+    {
+        pickupMessageText.gameObject.SetActive(false);
     }
 }
