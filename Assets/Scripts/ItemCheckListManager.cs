@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class ItemChecklistManager : MonoBehaviour
 {
-    public List<string> requiredItemNames;
-    public List<TMP_Text> checklistTexts;
-
-    public void CrossOutItem(string itemName)
+    [System.Serializable]
+    public class ChecklistEntry
     {
-        for (int i = 0; i < requiredItemNames.Count; i++)
+        public GameObject itemObject;
+        public TMP_Text itemText;
+    }
+
+    public List<ChecklistEntry> checklistEntries;
+
+    public void CrossOutItem(GameObject item)
+    {
+        foreach (ChecklistEntry entry in checklistEntries)
         {
-            if (requiredItemNames[i] == itemName)
+            if (entry.itemObject == item)
             {
-                checklistTexts[i].text = "<s>- " + requiredItemNames[i] + "</s>";
+                entry.itemText.text = "<s>  (Done)" + entry.itemText.text.Replace("<s>", "").Replace("</s>", "") + "</s>";
                 break;
             }
         }

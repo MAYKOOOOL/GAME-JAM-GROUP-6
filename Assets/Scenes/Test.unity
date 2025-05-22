@@ -167,14 +167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df609107f23fb474bac967ed81094ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredItemNames:
-  - Item1
-  - Item2
-  - Item3
-  checklistTexts:
-  - {fileID: 1989917924}
-  - {fileID: 1940986359}
-  - {fileID: 624211404}
+  checklistEntries:
+  - itemObject: {fileID: 1039001166}
+    itemText: {fileID: 1989917924}
 --- !u!1 &54513882
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,7 +947,7 @@ MonoBehaviour:
   crosshair: {fileID: 265241303}
   crosshairDistance: 5
   pickupMessageText: {fileID: 1148091787}
-  checklistManager: {fileID: 0}
+  checklistManager: {fileID: 28327458}
 --- !u!1 &526041208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,7 +1173,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 147.9617, y: -195.63898, z: -135.39636, w: 207.6065}
+  m_margin: {x: 147.9617, y: -195.63898, z: -350.80066, w: 207.6065}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3334,7 +3329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1936750750}
   m_Layer: 0
-  m_Name: ItemsText
+  m_Name: Required Item Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3480,7 +3475,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 147.9617, y: -195.63898, z: -135.39636, w: 207.6065}
+  m_margin: {x: 147.9617, y: -195.63898, z: -375.29596, w: 207.6065}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3685,7 +3680,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 147.9617, y: -195.63898, z: -135.39636, w: 207.6065}
+  m_margin: {x: 147.9617, y: -195.63898, z: -363.30365, w: 207.6065}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

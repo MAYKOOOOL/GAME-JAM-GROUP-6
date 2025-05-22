@@ -114,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
                 if (hit.collider.CompareTag("Required"))
                 {
                     ShowPickupMessage("You've picked up a special item!");
-                    checklistManager.CrossOutItem(hit.collider.gameObject.name);
+                    checklistManager.CrossOutItem(hit.collider.gameObject);
                     Destroy(heldObject);  
                 }
                 else if (hit.collider.CompareTag("PickUp"))
