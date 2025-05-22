@@ -28,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
     private float yaw = 0f;
     private float pitch = 0f;
 
+    public ItemChecklistManager checklistManager;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -101,13 +104,24 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, pickupRange))
         {
-            if (hit.collider.CompareTag("PickUp"))
+            if (hit.collider.CompareTag("PickUp") || hit.collider.CompareTag("Required"))
             {
                 heldObject = hit.collider.gameObject;
                 heldObjectRb = heldObject.GetComponent<Rigidbody>();
                 heldObjectRb.isKinematic = true;
                 heldObject.transform.SetParent(holdPoint);
-                ShowPickupMessage("You've picked up the item!");
+
+                if (hit.collider.CompareTag("Required"))
+                {
+                    ShowPickupMessage("You've picked up a special item!");
+                    checklistManager.CrossOutItem(hit.collider.gameObject.name);
+                    Destroy(heldObject);  
+                }
+                else if (hit.collider.CompareTag("PickUp"))
+                {
+                    ShowPickupMessage("You've picked up a random item!");
+
+                }
             }
         }
     }
@@ -137,7 +151,7 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, crosshairDistance))
         {
-            if (hit.collider.CompareTag("PickUp"))
+            if (hit.collider.CompareTag("PickUp") || hit.collider.CompareTag("Required"))
             {
                 if (crosshair != null)
                 {
